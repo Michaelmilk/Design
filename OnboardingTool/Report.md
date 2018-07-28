@@ -21,6 +21,25 @@
 
 
 
+> code
+>
+> ```
+> public class TriageReport
+> {
+>     public string ReportTimeSpan { get; set; }
+>     public string Type { get; set; }
+>     public string StartDate { get; set; }
+>     public string EndDate { get; set; }
+>     public TriageReportSummary TriageReportSummary { get; set; }
+>     public TriageReportDetail TriageReportDetail { get; set; }
+>     public string CreatedTime { get; set; }
+> }
+> ```
+>
+> 
+
+
+
 ## Summary
 
 * Miss SLA 
@@ -35,10 +54,13 @@
   ```
   public class TriageReportSummary
   {
-  	...
-      public int AllViewCount {get; set;}
-      public MissSlaSummary MissSlaSummary {get; set; }
+      public int AllViewCount { get; set; }
+      public MissSlaSummary MissSlaSummary { get; set; }
+      public TriageSummary TriageSummary { get; set; }
+      public RankSummary RankSummary { get; set; }
   }
+  
+  
   ```
 
   
