@@ -24,5 +24,22 @@
 ## Summary
 
 * Miss SLA 
-  * 
+  * missSla view ids group by diff cause
+  * missSla times(all missSla versions' count of all ids)
+
+* Triage 
+
+  * triage view ids group by commit and uncommit
+  * triage times(all triage versions' count of all ids)
+
+  ```
+  public class TriageReportSummary
+  {
+  	...
+      public int AllViewCount {get; set;}
+      public MissSlaSummary MissSlaSummary {get; set; }
+  }
+  ```
+
+  
 
